@@ -9,6 +9,11 @@ html {
     height: 100%;
     padding: 16px;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
 }
 
 .container div {
@@ -20,39 +25,24 @@ html {
     border-radius: 15px;
 }
 
-/*.grid-container{
-    display: grid;
-    grid-template: 50px 50px / 50px 50px;
-    gap: 32px;
-}*/
-
-.grid-container{
-    display: grid;
-    grid-template-columns: 50px 50px;
-    grid-template-rows: 50px 50px;
-    grid-auto-rows: 50px;
-    gap: 32px;
-}
-
-.card{
-    background-color: peachpuff;
-    border: 1px solid black;
-}
-
 .header {
     background-color: #FFDE22;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 .sidebar {
     background-color: #FF7755;
+    grid-area: 2 / 1 / 4 / 2;
 }
 
 .nav {
     background-color: #00DDFF;
+    grid-area: 2 / 2 / 3 / 3;
 }
 
 .article {
     background-color: #bccbde;
+    grid-area: 3 / 2 / 4 / 3;
 }
 
 .article p {
@@ -64,4 +54,6 @@ html {
 
 .footer {
     background-color: #393f4d;
+    grid-area: 4 / 1 / 5 / 3;
+    padding: 20px;
 }
