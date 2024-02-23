@@ -55,5 +55,18 @@ html {
 .footer {
     background-color: #393f4d;
     grid-area: 4 / 1 / 5 / 3;
-    padding: 20px;
+}
+
+@media (max-width: 1500px) {
+
+    .nav,
+    .article,
+    .sidebar,
+    .footer,
+    .header {
+        width: 95%;
+        height: auto;
+        align-items: center;
+        float: inherit;
+    }
 }
