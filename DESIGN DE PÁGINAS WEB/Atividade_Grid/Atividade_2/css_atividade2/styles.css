@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    gap: 4px;
+}
+
+.container div {
+    padding: 15px;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+}
+
+.header {
+    background-color: #393f4d;
+}
+
+.logo {
+    float: left;
+
+}
+
+.menu ul,
+.menu li {
+    font-size: 16px;
+    padding: 0px 40px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: center;
+    float: right;
+}
+
+.sidebar {
+    background-color: #FF7755;
+    width: auto;
+    max-width: 35vh;
+}
+
+.sidebar .photo {
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 10px;
+    height: 30vh;
+    width: 30vh;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar .side-content {
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    height: 30vh;
+    width: 30vh;
+    margin: 30px 0px;
+
+}
+
+.nav {
+    background-color: #FF7755;
+}
+
+.nav ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+    list-style: none;
+    display: inline;
+    padding: 0px 100px;
+}
+
+.article {
+    background-color: #bccbde;
+}
+
+.article p {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.article .card {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    height: 30vh;
+    width: 40vh;
+    margin: 6px
+}
+
+.card p {
+    color: black;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.card .title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #393f4d;
+}
+
+.footer p {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+.header {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.sidebar {
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.nav {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.article {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.footer {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+
+@media screen and (max-width: 1500px) {
+
+    .container,
+    .container div,
+    .article p {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        flex-direction: column;
+        font-size: small;
+        width: auto;
+        height: auto;
+    }
+}
