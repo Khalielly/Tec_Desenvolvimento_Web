@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<!-- tabela com seis linha e seis colunas -->    
+    <table id="tabelaDeCompras">
+        <caption> Lista de Compras</caption>
+        <tr>
+            <th>Produto</th> 
+            <th>Quantidade</th> 
+            <th>Preço</th>
+            <th>Subtotal</th>
+            <th>Desconto</th>
+            <th>Total</th>
+        </tr>
+        <tr><!--linha da tabela-->
+            <td><img src="data:image/jpeg;base64,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"><figcaption>Arroz</figcaption></td>
+            <td>2</td>  
+            <td>5.00</td>
+            <td>10.00</td>
+            <td>0.00</td>
+            <td>10.00</td>
+        </tr>
+        <tr>
+            <td><img src="https://imageswscdn.wslojas.com.br/files/24534/arroz-arboreo-10x1-10kg-fardo-90-1.jpg"><figcaption>Feijão</figcaption></td>
+            <td>2</td>
+            <td>7.00</td>
+            <td>14.00</td>
+            <td>0.00</td>
+            <td>14.00</td>
+        </tr>
+        <tr>
+            <td><image src=""></image><figcaption>Macarrão</figcaption></td>
+            <td>2</td>
+            <td>3.00</td>
+            <td>6.00</td>
+            <td>0.00</td>
+            <td>6.00</td>
+        </tr>
+        <tr>
+            <td><img src=""><figcaption>Carne</figcaption></td>
+            <td>2</td>
+            <td>20.00</td>
+            <td>40.00</td>
+            <td>0.00</td>
+            <td>40.00</td>
+        </tr>
+        <tr>
+            <td><img src="#" alt=""><figcaption>Frango</figcaption></td>
+            <td>2</td>
+            <td>15.00</td>
+            <td>30.00</td>
+            <td>0.00</td>
+            <td>30.00</td>
+        </tr>
+        <tr>
+            <td><img src=""alt=""><figcaption> Peixe</figcaption></td>
+            <td>2</td>
+            <td>25.00</td>
+            <td>50.00</td>
+            <td>0.00</td>
+            <td>50.00</td>
+        </tr>
+        <tr>
+            <td>Leite</td>
+            <td>2</td>
+            <td>3.00</td>
+            <td>6.00</td>
+            <td>0.00</td>
+            <td>6.00</td>
+        </tr>
+        
+        <tr id="total" "Total da Compra">
+            
+                <td colspan="6" id="total_fim" >Total da Compra :<mark> <r1>R$ 206.00</r1></mark></td></tr>
+                
+            </tr>
+            
+        </table> 
+</body>
+</html>

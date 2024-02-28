@@ -1,0 +1,50 @@
+
+
+img{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    
+}
+table{
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    display: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 10%;
+}
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*background-color:bisque;*/
+}
+caption{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#total{
+    text-align: right;
+    font-size: 20px;
+    color: red;
+}
+
+
+    
+    
+    
+
