@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    color: blue;
+    size: 50px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(127, 204, 255);
+}
+
+th:hover{
+    background-color: rgba(221, 92, 204, 0.534);
+}
+
+td:hover::after{
+    background-color: rgba(101, 55, 145, 0.541);
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+}
+
+table{
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    display: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 10%;
+}
+ul {
+    align-items: center;
+
+}
+
+ol {
+    list-style-type: lower-alpha;
+
+    margin-right: 10px;
+    margin-left: 10px;
+
+
+}
+
+body {
+    background-image: url();
+    background-size: cover;
+}
