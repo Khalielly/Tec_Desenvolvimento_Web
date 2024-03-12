@@ -37,6 +37,18 @@
             }
 
             var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+            if(media >= 7.0){
+                alert("Sua média é: "+" "+media +" "+"-" + "Você foi aprovado!!!");
+                msg = (""+nome+","+" " + "a sua média é" + "" +media + ""+"-"+ "Você foi aprovado");
+                document.write(msg);
+            }
+            else if (media < 5.0){
+                alert("Sua média é: "+" "+media+" "+"-" + "Você foi reprovado!!!");
+                msg = (""+nome+","+" " + "a sua média é" + "" + media + ""+"-"+ "Você foi reprovado");
+                document.write(msg);
+
+            }
         </script>
 
 
