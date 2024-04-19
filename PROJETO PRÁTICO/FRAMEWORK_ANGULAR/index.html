@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <title>Cadastro de funcionarios</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Cadastro de funcionarios</span>
+            <button onclick="openmodal()" id="new">incluir</button>
+        </div>
+        <div class="divTabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Funçao</th>
+                        <th>Salario</th>
+                        <th>Matricula</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="modalContainer">
+            <div class="modal">
+                <form>
+                    <label for="m-Nome">Nome</label>
+                    <input id="m-Nome" type="text" required />
+
+                    <label for="m-Funcao">Funçao</label>
+                    <input id="m-Funcao" type="text" required />
+
+                    <label for="m-Matricula">Matricula</label>
+                    <input id="m-Matricula" type="number" required />
+
+                    <label for="m-Salario">Salario</label>
+                    <input id="m-salario" type="number" required />
+
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <script src="JS/CAS_funcio.JS"></script>
+    </div>
+</body>
+
+</html>
