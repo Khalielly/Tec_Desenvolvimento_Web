@@ -152,6 +152,7 @@ tbody tr td.acao {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 50%;
+    margin-bottom: 50%;
 }
 
 .modal label {
